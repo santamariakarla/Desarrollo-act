@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="auto"> 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Este desarrollo es de mi empresa">
+  <meta name="author" content="Karla Santamaria">
+  <title>Vinil Vibe</title>
+
+  <!-- Bootstrap CSS desde CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Mi hoja de estilos personalizada -->
+  <link href="styles.css" rel="stylesheet">
+
+  <meta name="theme-color" content="#712cf9">
+</head>
+
+<body> 
+
+  <!-- Barra de navegación -->
+  <header data-bs-theme="dark">
+    <nav class="navbar navbar-expand-md fixed-top mi-navbar">
+     <!--<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">-->
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Vinil Vibe</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+          </ul>
+
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <main>
+
+    <!-- Carousel -->
+    <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+      <!-- Indicadores -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <!-- Slides -->
+
+      <!--primer imagen de slide-->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+
+          <img src="img/vinil5.jpg" alt="Primera imagen" width="100%">
+
+          <!--<svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+            <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+          </svg>-->
+
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>Vinil Vibe</h1>
+              <p class="opacity-00">Vinil Vibe en donde la magia del vinilo nunca pasa de moda.</color:></p>
+              <p><a class="btn btn-lg btn-primary" href="#">Comenzar ahora</a></p>
+            </div>
+          </div>
+        </div>
+
+        <!--segunda imagen de slide-->
+
+        <div class="carousel-item">
+          <img src="img/vinil8.jpg" alt="Primera imagen" width="100%">
+
+          <!--<svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+            <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+          </svg>-->
+
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Nuestras experiencias.</h1>
+              <p>Contamos con experiencias únicas y personalizadas.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Descubre más</a></p>
+            </div>
+          </div>
+        </div>
+
+        <!--tercera imagen de slide-->
+
+        <div class="carousel-item">
+          <img src="img/vinil9.jpg" alt="Primera imagen" width="100%">
+
+          <!--<svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+            <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+          </svg>-->
+
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>Una experiencia más.</h1>
+              <p>Contenido de ejemplo para la tercera diapositiva del carrusel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Explorar galería</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controles -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+
+    <!-- Marketing -->
+    <div class="container marketing my-5">
+      <div class="row text-center">
+        <div class="col-lg-4">
+          <img src="img/vinil3.jpg" class="bd-placeholder-img rounded-circle mb-3" alt="Imagen 1" width="250px" height="250px">
+          <h2 class="fw-normal">Sobre nosotros</h2>
+          <p>En Vinil Vibe celebramos el sonido real.Ofrecemos vinilos seleccionados con pasión: clásicos, rarezas y joyas por descubrir. Si vibras con el vinilo, este es tu lugaar.</p>
+          <p><a class="btn btn-secondary" href="#">Ver más &raquo;</a></p>
+        </div>
+
+        <div class="col-lg-4">
+          <img src="img/vinil1.jpg" class="bd-placeholder-img rounded-circle mb-3" alt="Imagen 2" width="250px" height="250px">
+          <h2 class="fw-normal">Novedades y Lanzamientos</h2>
+          <p>Descubre lo último en vinilos que llegan a Vinil Vibe. Nuevas ediciones, clásicos reeditados y joyas exclusivas para mantener viva la pásion por el sonido analógico. ¡No te pierdas lo que acaba de entrar!</p>
+          <p><a class="btn btn-secondary" href="#">Ver más &raquo;</a></p>
+        </div>
+
+        <div class="col-lg-4">
+          <img src="img/vinil2.jpg" class="bd-placeholder-img rounded-circle mb-3" alt="Imagen 3" width="250px" height="250px">
+          <h2 class="fw-normal">Eventos y Comunidad</h2>
+          <p>En Vinil Vibe, el vinilo no solo se escucha, se vive. Organizamos y participamos en ferias, sesiones de escucha, DJ sets y encuentros para seleccionistas.</p>
+          <p><a class="btn btn-secondary" href="#">Ver más &raquo;</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Featurettes -->
+    <div class="container my-5">
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1">Playlist <span class="text-body-secondary">Vinil Vibe.</span></h2>
+          <p class="lead">Descubre nuestras playlist insipiradas en los vinilos que amamos. Clásicos, rarezas y sonidos que definen nuestra vibra. Para que disfrutes de la vibra también en digital.</p>
+        </div>
+        <div class="col-md-5">
+          <img src="img/vinil4.jpg" class="img-fluid mx-auto" alt="Feature 1">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading fw-normal lh-1">Lo que escucharía con <span class="text-body-secondary">vos</span></h2>
+          <p class="lead">Esta no es solo una tienda: también es un reflejo de lo que suena en mi vida. Aquí comparto algunos de los artistas que más me inspiran, me acompañan
+           o simplemente me recuerdan a alguien especial.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img src="img/vinil7.jpg" class="img-fluid mx-auto" alt="Feature 2">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1">Regala <span class="text-body-secondary">Vinil Vibe.</span></h2>
+          <p class="lead">Sorprendé a esa persona especial con un regalo único y lleno de emoción. Elige el vinilo perfecto, escribe un mensaje personalizado y nosotros nos
+          encargamos de que llegue directo a su puerta, listo para emocionar y sonar. Porque regalar música en vinilo no es solo un detalle, es crear momentos inolvidables.</p>
+        </div>
+        <div class="col-md-5">
+          <img src="img/vinil6.jpg" class="img-fluid mx-auto" alt="Feature 3">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+    </div>
+
+    <!-- Footer -->
+    <footer class="container text-center py-4">
+      <p class="float-end"><a href="#">Volver arriba</a></p>
+      <p>&copy; 2025 Vinil Vibe &middot; <a href="#">Privacidad</a> &middot; <a href="#">Términos</a></p>
+    </footer>
+  </main>
+
+  <!-- Bootstrap JS desde CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
